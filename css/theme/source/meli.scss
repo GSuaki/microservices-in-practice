@@ -14,21 +14,21 @@
 // Include theme-specific fonts
 @import url(../../lib/font/gotham/gotham.css);
 
-
 // Override theme settings (see ../template/settings.scss)
+$yellor: #ffe600;
 $backgroundColor: #fff;
 
 $mainColor: #222;
 $headingColor: #222;
 
-$mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFontSize: 26px;
+$mainFont: Gotham, Helvetica, sans-serif;
+$headingFont: Gotham, Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #2a76dd;
+$linkColor: $yellor;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -43,6 +43,33 @@ section.has-dark-background {
 	}
 }
 
+.left {
+  text-align: left;
+}
+
+.yellow {
+  color: $yellor !important;
+}
+
+.footer {
+  bottom: 40px;
+  position: fixed;
+  left: 0;
+  font-size: 24px;
+  color: $yellor;
+}
+
+.stack {
+  height: 150px;
+}
+
+.hex {
+  height: 300px;
+}
+
+section#why {
+  
+}
 
 // Theme template ------------------------------
 @import "../template/theme";
